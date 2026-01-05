@@ -4,9 +4,6 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Bỏ qua dataset (Không up ảnh nặng lên git)
-archive/
-QRCode/
-output_qr1/
 
 # Bỏ qua các file hệ thống
 .DS_Store
