@@ -105,7 +105,7 @@ pip install opencv-python numpy matplotlib pandas
 
 ---
 
-## 66. Đánh giá (Evaluation)
+## 6. Đánh giá (Evaluation)
 
 Hệ thống được đánh giá trên tập test với các chỉ số:
 
