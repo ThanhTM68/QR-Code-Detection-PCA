@@ -61,7 +61,35 @@ Hệ thống hoạt động qua 2 giai đoạn: Huấn luyện (Training) và Su
 
 ---
 
-## 4. Cài đặt
+## 4. Bộ dữ liệu (Dataset)
+
+Dự án sử dụng 2 nguồn dữ liệu riêng biệt để đảm bảo tính khách quan giữa quá trình huấn luyện mô hình PCA và kiểm thử hệ thống.
+
+### Dữ liệu Huấn luyện (Training Set)
+
+Sử dụng bộ dữ liệu **Finder Patterns QR Code** từ Kaggle để xây dựng không gian vector riêng (Eigenspace).
+
+-   **Nguồn:** [Kaggle - Finder Patterns QR Code](https://www.kaggle.com/datasets/samygrisard/finder-patterns-qr-code) 🔗
+-   **Đặc điểm:** Chứa các ảnh mẫu và ảnh nhãn **Finder Pattern** (hoa văn định vị 3 góc) đã được chuẩn hóa.
+-   **Mục đích:**
+    -   Tính toán Vector trung bình (Mean Vector) và các Vector riêng (Eigenvectors).
+    -   Xác định ngưỡng khoảng cách T_D để phân loại mẫu thật/giả.
+
+### Dữ liệu Kiểm thử (Testing Set)
+
+Dữ liệu thực tế (**In-the-wild images**)
+
+**Nguồn:** Tự thu thập
+**Số lượng:** 65 ảnh
+
+-   **Đặc điểm:**
+    -   Chứa mã QR nguyên vẹn trong các điều kiện môi trường phức tạp (thiếu sáng, mờ nhòe, góc nghiêng, xoay)
+    -   Bao gồm cả các ảnh không có QR để kiểm tra tỉ lệ nhận diện sai
+-   **Mục đích:** Đánh giá chỉ số Accuracy, Precision, Recall và FPS.
+
+---
+
+## 5. Cài đặt
 
 Bước 1: Chuẩn bị môi trường
 
@@ -77,7 +105,7 @@ pip install opencv-python numpy matplotlib pandas
 
 ---
 
-## 5. Đánh giá (Evaluation)
+## 66. Đánh giá (Evaluation)
 
 Hệ thống được đánh giá trên tập test với các chỉ số:
 
