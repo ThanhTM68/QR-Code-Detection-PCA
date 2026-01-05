@@ -79,13 +79,13 @@ Sử dụng bộ dữ liệu **Finder Patterns QR Code** từ Kaggle để xây 
 
 Dữ liệu thực tế (**In-the-wild images**)
 
-**Nguồn:** Tự thu thập
-**Số lượng:** 65 ảnh
+- **Nguồn:** Tự thu thập
+- **Số lượng:** 65 ảnh
 
--   **Đặc điểm:**
+- **Đặc điểm:**
     -   Chứa mã QR nguyên vẹn trong các điều kiện môi trường phức tạp (thiếu sáng, mờ nhòe, góc nghiêng, xoay)
     -   Bao gồm cả các ảnh không có QR để kiểm tra tỉ lệ nhận diện sai
--   **Mục đích:** Đánh giá chỉ số Accuracy, Precision, Recall và FPS.
+- **Mục đích:** Đánh giá chỉ số Accuracy, Precision, Recall và FPS.
 
 ---
 
